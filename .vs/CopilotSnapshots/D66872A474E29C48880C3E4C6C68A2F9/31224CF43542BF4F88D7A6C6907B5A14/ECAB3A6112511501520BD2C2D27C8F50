@@ -1,0 +1,77 @@
+﻿using Averis.WEBMVC.Data;
+using Averis.WEBMVC.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
+namespace AverisWEBMVC
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AverisDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            var app = builder.Build();
+
+            // Seed data
+            using (var scope = app.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<AverisDbContext>();
+                context.Database.Migrate();
+
+                if (!context.Sliders.Any())
+                {
+                    context.Sliders.Add(new AverisSlider
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Title = "Welcome to Averis",
+                        Content = "We provide best services for your business",
+                        ImageUrl = "hero-bg.jpg",
+                        ButtonLink = "#about",
+                        ButtonText = "Get Started"
+                    });
+                }
+
+                if (!context.Abouts.Any())
+                {
+                    context.Abouts.Add(new AverisAbout
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LittleTitle = "About",
+                        BigTitle = "About Us",
+                        FirstText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        SecondText = "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+                        Litexts = new List<string> { "Professional team", "Quality service", "24/7 Support" },
+                        ButtonLink = "/about",
+                        ButtonText = "Read More"
+                    });
+                }
+
+                context.SaveChanges();
+            }
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
+        }
+    }
+}
