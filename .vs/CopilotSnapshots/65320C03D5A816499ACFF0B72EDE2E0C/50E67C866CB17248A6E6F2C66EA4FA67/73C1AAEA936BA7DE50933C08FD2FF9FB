@@ -1,0 +1,30 @@
+﻿using Averis.WEBMVC.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace Averis.WEBMVC.Data.Configurations
+{
+    public class AverisSliderConfiguration : IEntityTypeConfiguration<AverisSlider>
+    {
+        public void Configure(EntityTypeBuilder<AverisSlider> builder)
+        {
+            builder.HasKey(slider => slider.Id);
+            builder.Property(slider => slider.Title)
+                .IsRequired()
+                .HasMaxLength(500);
+            builder.Property(slider => slider.Content)
+                .IsRequired()
+                .HasMaxLength(500);
+            builder.Property(slider => slider.ImageUrl)
+                .IsRequired()
+                .HasMaxLength(500);
+            builder.Property(slider => slider.ButtonLink)
+                .IsRequired()
+                .HasMaxLength(500);
+            builder.Property(slider => slider.ButtonText)
+                 .IsRequired()
+                 .HasMaxLength(500);
+        }
+    }
+}
+

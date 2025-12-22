@@ -16,10 +16,16 @@ namespace AverisWEBMVC.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var slide = await _averisDb.Sliders.FirstOrDefaultAsync();
-            var about = await _averisDb.Abouts.FirstOrDefaultAsync();
-            
-            if (slide == null)
+            var slides = await _averisDb.Sliders.ToListAsync();
+            var about = await _averisDb.Abouts
+                            .Include(a => a.LiTexts)
+                            .FirstOrDefaultAsync();
+            var cards = await _averisDb.HomeCards.ToListAsync();
+            if (cards == null|!cards.Any())
+            {
+                return NotFound("Kartlar tapilmadi");
+            }
+            if (slides == null||!slides.Any())
             {
                 return NotFound("Slider tapılmadı");
             }
@@ -31,8 +37,9 @@ namespace AverisWEBMVC.Controllers
 
             HomeVm homeVm = new HomeVm
             {
-                Slider = slide,
-                About = about
+                Slider = slides,
+                About = about,
+                Cards= cards
             };
             
             return View(homeVm);

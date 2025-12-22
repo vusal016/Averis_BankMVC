@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Averis.WEBMVC.Migrations
 {
     [DbContext(typeof(AverisDbContext))]
-    [Migration("20251219201236_Refactor")]
-    partial class Refactor
+    [Migration("20251222103522_mig1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,35 +31,58 @@ namespace Averis.WEBMVC.Migrations
 
                     b.Property<string>("BigTitle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ButtonLink")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("ButtonText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("FirstText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LiText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("LittleTitle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("SecondText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Abouts");
+                });
+
+            modelBuilder.Entity("Averis.WEBMVC.Models.AverisLiText", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("AverisAboutId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Litext")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AverisAboutId");
+
+                    b.ToTable("LiTexts");
                 });
 
             modelBuilder.Entity("Averis.WEBMVC.Models.AverisSlider", b =>
@@ -69,27 +92,47 @@ namespace Averis.WEBMVC.Migrations
 
                     b.Property<string>("ButtonLink")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ButtonText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Content")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Sliders");
+                });
+
+            modelBuilder.Entity("Averis.WEBMVC.Models.AverisLiText", b =>
+                {
+                    b.HasOne("Averis.WEBMVC.Models.AverisAbout", "AverisAbout")
+                        .WithMany("LiTexts")
+                        .HasForeignKey("AverisAboutId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("AverisAbout");
+                });
+
+            modelBuilder.Entity("Averis.WEBMVC.Models.AverisAbout", b =>
+                {
+                    b.Navigation("LiTexts");
                 });
 #pragma warning restore 612, 618
         }
