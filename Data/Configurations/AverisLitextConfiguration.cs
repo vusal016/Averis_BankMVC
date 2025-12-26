@@ -10,7 +10,7 @@ namespace Averis.WEBMVC.Data.Configurations
         {
             builder.HasKey(litext => litext.Id);
             
-            // Id avtomatik artmalıdır (IDENTITY)
+         
             builder.Property(litext => litext.Id)
                 .ValueGeneratedOnAdd();
                 
@@ -20,3 +20,4 @@ namespace Averis.WEBMVC.Data.Configurations
             }
         }
     }
+    

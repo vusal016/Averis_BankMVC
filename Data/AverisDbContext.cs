@@ -13,6 +13,9 @@ namespace Averis.WEBMVC.Data
         public DbSet<AverisAbout> Abouts { get; set; }
         public DbSet<AverisLiText> LiTexts { get; set; }
         public DbSet<AverisHomeCards> HomeCards { get; set; }
+        public DbSet<AverisDetailProductImages> DetailProductImages { get; set; }
+        public DbSet<AverisHomeCategory> HomeCategories { get; set; }
+        public DbSet<FinanceProduct> FinanceProducts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

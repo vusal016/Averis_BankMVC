@@ -13,7 +13,7 @@ namespace Averis.WEBMVC.Models
             ButtonLink = buttonLink;
             ButtonText = buttonText;
         }
-
+    
     
         public string Title { get;private set; }
         public string Content { get;private set; }

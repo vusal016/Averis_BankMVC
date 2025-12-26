@@ -17,13 +17,13 @@ namespace Averis.WEBMVC.Models
         }
 
     
-        public string LittleTitle { get; set; }
-        public string BigTitle { get; set; }
-        public string FirstText { get; set; }
-        public string SecondText { get; set; }
-        public string ButtonLink { get; set; }
-        public string ButtonText { get; set; }
-        public ICollection<AverisLiText>? LiTexts { get; set; } = new List<AverisLiText>();
+        public string LittleTitle { get;private set; }
+        public string BigTitle { get;private set; }
+        public string FirstText { get;private set; }
+        public string SecondText { get;private set; }
+        public string ButtonLink { get;private set; }
+        public string ButtonText { get;private set; }
+        public ICollection<AverisLiText>? LiTexts { get;private set; } = new List<AverisLiText>();
 
     }
 }

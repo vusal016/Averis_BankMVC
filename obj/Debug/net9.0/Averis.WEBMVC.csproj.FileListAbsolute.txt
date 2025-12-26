@@ -233,4 +233,3 @@ C:\Users\User\OneDrive\Desktop\Portfolio\AverisWEBMVC\bin\Debug\net9.0\ru\Micros
 C:\Users\User\OneDrive\Desktop\Portfolio\AverisWEBMVC\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\OneDrive\Desktop\Portfolio\AverisWEBMVC\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\OneDrive\Desktop\Portfolio\AverisWEBMVC\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\User\OneDrive\Desktop\Portfolio\AverisWEBMVC\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

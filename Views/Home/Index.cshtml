@@ -1,6 +1,7 @@
 ﻿@model HomeVm
 @{
     ViewData["Title"] = "Home Page";
+    int count = 0;
 }
 <main class="main">
 
@@ -11,7 +12,7 @@
 
             @foreach (var slide in Model.Slider)
             {
-                <div class="carousel-item active">
+                <div class="carousel-item @((count==0)? "active":"")">
                     <img src="~/assets/img/@slide.ImageUrl" alt="">
                     <div class="carousel-container">
                         <h2>@slide.Title<br></h2>
@@ -19,7 +20,7 @@
                         <a href="@slide.ButtonLink" class="btn-get-started">@slide.ButtonText</a>
                     </div>
                 </div>
-
+                @(count++);
                 <!-- End Carousel Item -->
             }
 
@@ -144,8 +145,8 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p>Necessitatibus eius consequatur</p>
+            <h2>MALİYYƏ HƏLLƏRİ</h2>
+            <p>Gündəlik və yığım hesablarınız vasitəsilə vəsaitlərinizi rahat və şəffaf şəkildə idarə edin.</p>
         </div><!-- End Section Title -->
 
         <div class="container">
