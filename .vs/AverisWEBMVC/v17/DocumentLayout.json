@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|solutionrelative:views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|c:\\users\\user\\onedrive\\desktop\\portfolio\\averiswebmvc\\models\\financeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|solutionrelative:models\\financeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|c:\\users\\user\\onedrive\\desktop\\portfolio\\averiswebmvc\\models\\averishomecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|solutionrelative:models\\averishomecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|c:\\users\\user\\onedrive\\desktop\\portfolio\\averiswebmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|c:\\users\\user\\onedrive\\desktop\\portfolio\\averiswebmvc\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|solutionrelative:viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|c:\\users\\user\\onedrive\\desktop\\portfolio\\averiswebmvc\\models\\averishomecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A25B9CE3-D5AB-434A-BC2B-1A9CF60B1C9D}|Averis.WEBMVC.csproj|solutionrelative:models\\averishomecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 344,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "FinanceProduct.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Models\\FinanceProduct.cs",
+              "RelativeDocumentMoniker": "Models\\FinanceProduct.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Models\\FinanceProduct.cs",
+              "RelativeToolTip": "Models\\FinanceProduct.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA8wAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T17:40:17.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FinanceDetailVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\ViewModels\\FinanceDetailVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\FinanceDetailVM.cs",
@@ -50,8 +71,7 @@
               "RelativeToolTip": "ViewModels\\FinanceDetailVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T20:31:56.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T20:31:56.776Z"
             },
             {
               "$type": "Document",
@@ -61,14 +81,14 @@
               "RelativeDocumentMoniker": "Views\\Home\\Detail.cshtml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Views\\Home\\Detail.cshtml",
               "RelativeToolTip": "Views\\Home\\Detail.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAC4AAABUAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAGUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-30T20:06:17.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AverisHomeCategory.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Models\\AverisHomeCategory.cs",
               "RelativeDocumentMoniker": "Models\\AverisHomeCategory.cs",
@@ -80,12 +100,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HomeVm.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\ViewModels\\HomeVm.cs",
               "RelativeDocumentMoniker": "ViewModels\\HomeVm.cs",
@@ -93,12 +109,11 @@
               "RelativeToolTip": "ViewModels\\HomeVm.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T19:04:11.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T19:04:11.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -106,12 +121,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAJcAAAAAAAAAAAApwK8AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-27T16:45:02.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T16:45:02.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -119,12 +133,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAHsAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-27T18:32:31.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T18:32:31.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Portfolio\\AverisWEBMVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -132,8 +145,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T16:08:01.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-27T16:08:01.373Z"
             }
           ]
         },

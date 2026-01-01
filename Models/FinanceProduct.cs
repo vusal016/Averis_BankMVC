@@ -22,7 +22,7 @@ namespace Averis.WEBMVC.Models
         public string Description { get;private set; }
         public string Link { get;private set; }
         public string ImageUrl { get;private set; }
-        public DateTime CratedAt { get;private set; }
+        public DateTime CratedAt { get;private set; }=
         public string Client { get;private set; }
         public string ProjectUrl { get;private set; }
         public string DetailTitle { get;private set; }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Averis.WEBMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c18348738f7ab53e26e09ec5f4366ff70df76aa6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e33b97e7247060a57fc2537aa245b4a409fa9c63")]
 [assembly: System.Reflection.AssemblyProductAttribute("Averis.WEBMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Averis.WEBMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
